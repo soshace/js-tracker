@@ -6,14 +6,15 @@
 
 <script>
 (function(){
-  window.TrackerQueue = window.TrackerQueue || [];
-  window.TrackerQueue.push({appId: "my-test-app"});
+    window.TrackerPrefix = "http://d2us7vtkeubu3x.cloudfront.net/i?";
+    window.TrackerQueue = window.TrackerQueue || [];
+    window.TrackerQueue.push({appId: "my-test-app"});
 
-  var trackerScript = document.createElement("script");
-  trackerScript.async = 1;
-  trackerScript.defer = 1;
-  trackerScript.src = "/scripts/test.js";
-  var firstScript = document.getElementsByTagName("script")[0];
-  firstScript.parentNode.insertBefore(trackerScript, firstScript);
+    var trackerScript = document.createElement("script");
+    trackerScript.async = 1;
+    trackerScript.defer = 1;
+    trackerScript.src = "/scripts/test.js";
+    var firstScript = document.getElementsByTagName("script")[0];
+    firstScript.parentNode.insertBefore(trackerScript, firstScript);
 })();
 </script>
