@@ -25,6 +25,9 @@
         // Update parameters with passed as item
         for (var attname in item) {params[attname] = item [attname];}
 
+        // Add random parameter
+        params._uniq = Math.random();
+
         track(params);
     };
 
